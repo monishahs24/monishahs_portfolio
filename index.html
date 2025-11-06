@@ -1,233 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Monisha H S</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monisha H S | Portfolio</title>
+  <link rel="stylesheet" href="main.css">
+  <!-- Font Awesome for Professional Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..16,100..700');
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-content fade-in">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Monisha H S</span></h1>
+        <h2>B.Tech Student - Electronics & Communication</h2>
+        <p>A diligent and adaptable engineering fresher with a robust academic background and hands-on exposure to problem-solving. Ready to contribute effectively.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="https://github.com/monishahs24" target="_blank" class="btn secondary">View GitHub</a>
+      </div>
+      <div class="hero-img slide-in">
+        <img src="image.jpg" alt="Monisha H S">
+      </div>
+    </div>
+  </header>
 
-    :root {
-        --mainTextColor-light: #000;
-        --secondaryTextColor-light: rgb(51 51 51);
-        --mainLinkColor-light: #0da2b8;
-        --mainBorderColor-light: rgb(218, 218, 218);
-        --mainBgColor-light: rgb(249, 250, 251);
+  <!-- About -->
+  <section class="about fade-in">
+    <div class="container">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <p>Highly analytical and driven engineering fresher with a strong foundation in systematic problem-solving and technical implementation. Experienced through internships at major organizations and proficient in a diverse technical stack, ranging from Programming to Creative Design and Visualization. I thrive in dynamic environments and am eager to apply my technical precision and creative communication skills to non-core roles in Business Analysis, Operations, or Technology Consulting..</p>
+    </div>
+  </section>
 
-        --mainTextColor-dark: #fff;
-        --secondaryTextColor-dark: #16aadb;
-        --mainLinkColor-dark: rgb(30, 190,214);
-        --mainBorderColor-dark: #2b3031;
-        --mainBgColor-dark: #131415;
+  <!-- Journey (Stacked Cards) -->
+  <section class="fade-in">
+    <div class="container">
+      <h2><i class="fas fa-road"></i> My Journey</h2>
 
-        --mainTextColor: var(--mainTextColor-dark);
-        --secondaryTextColor: var(--secondaryTextColor-dark);
-        --mainLinkColor: var(--mainLinkColor-dark);
-        --mainBorderColor: var(--mainBorderColor-dark);
-        --mainBgColor: var(--mainBgColor-dark);
-    }
+      <!-- Education -->
+      <div class="timeline-item">
+        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+        <p><b>GITAM University</b> – B.E. ECE (2022–Present) | CGPA: 7.57</p>
+        <p><b>Shree Vani PU College</b> – PUC/12th (2020–2022) | CGPA: 9.1</p>
+        <p><b>Swamy Vivekananda English High School</b> – SSLC/10th (2019–2020) | CGPA: 9.8</p>
+      </div>
 
-    * {
-        font-family: 'Lato', sans-serif;
-        line-height: 1.5em;
-        box-sizing: border-box;
-        color: var(--mainTextColor);
-    }
+      <!-- Skills -->
+      <div class="timeline-item">
+        <h3><i class="fas fa-lightbulb"></i> Skills</h3>
+        <p><b>Design & Visualization:</b> Graphic Designing </p>
+        <p><b>Programming:</b> C, C++, Java, Python</p>
+        <p><b>Hardware & Tools:</b> Verilog, MATLAB, Cadence Virtuoso, Xilinx Vivado, Keil uVision, Proteus 7</p>
+        <p><b>Soft Skills:</b> Decision Making, Time Management, Planning & Organizing</p>
+        <p><b>Languages:</b> Kannada (Native), English (Professional)</p>
+      </div>
 
-    body {
-        background-color: var(--mainBgColor);
-        margin: 0;
-        padding: 0;
-        font-size: 16px; /* Base font size */
-    }
+      <!-- Projects -->
+      <div class="timeline-item project">
+        <h3><i class="fas fa-code"></i> Project – Low-Power Clock-Gated TSPC Flip-Flop</h3>
+        <p><i>Completed</i><br>
+            Designed and implemented<b>low-power clock-gated TSPC flip-flop</b> to overcome the limitations of conventional flip-flops, which consume excessive power due to constant clock activity and redundant internal transitions.
+         <br><b>Features:</b>  
+        – Clock gating technique to reduce unnecessary switching activity.
+        – Optimized dynamic and leakage power consumption.
+        – Designed using VLSI design tool using Xilinx Vivado.
+        – Verified performance through simulation and comparative analysis with conventional flip-flops.
+        <br><b>Impact:</b> Achieved significant power savings in flip-flop operation, improving energy efficiency in sequential circuits.Contributed to the design of sustainable low-power VLSI systems, applicable in processors, IoT devices, and portable electronics.</p>
+      </div>
 
-    p, span, li, a {
-        color: var(--secondaryTextColor);
-        font-size: 1em; /* Unified font size */
-    }
+      <div class="timeline-item project">
+        <h3><i class="fas fa-code"></i> Project – Ear-Wearable SpO₂ Monitoring System</h3>
+        <p><i>August 30, 2025 – Present</i><br>
+        Developed an <b>ear-wearable device</b> for continuous SpO₂ and heart rate monitoring for workers in low-ventilation environments.  
+        <br><b>Features:</b>  
+        – Optical SpO₂ sensor with motion correction  
+        – Microcontroller + Bluetooth integration  
+        – Machine learning for anomaly detection  
+        – Real-time alerts via buzzer, vibration, and mobile notifications  
+        <br><b>Impact:</b> Enhances worker safety, prevents hypoxia-related accidents, and supports Industrial IoT applications in mining and construction.</p>
+      </div>
 
-    a {
-        text-decoration: none;
-        color: var(--mainLinkColor);
-    }
+      <!-- Internships -->
+      <div class="timeline-item">
+        <h3><i class="fas fa-briefcase"></i> Internship – Bharat Electronics Limited (BEL)</h3>
+        <p><i>05/2025 – 06/2025</i><br>
+        Internship on <b>MFSTAR</b> and <b>LRSAM</b> in the Advanced Defence System Navy (ADSN SBU).  
+        Gained exposure to advanced defense communication systems and radar technologies.</p>
+      </div>
 
-    li {
-        line-height: 1.9em;
-    }
+      <div class="timeline-item">
+        <h3><i class="fas fa-briefcase"></i> Internship – Summer Development Program</h3>
+        <p><i>05/2024 – 06/2024</i><br>
+        Worked on <b>PCB Design using TinkerCad</b>.  
+        Learned electronic circuit design, testing, and implementation.</p>
+      </div>
 
-    #container--main {
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 1em;
-    }
+      <div class="timeline-item">
+        <h3><i class="fas fa-briefcase"></i> Internship – VLSI Design (Internshala Training)</h3>
+        <p><i>07/2024 – 08/2024</i><br>
+        Completed training in <b>VLSI design</b> using Verilog, Cadence Virtuoso, and Xilinx Vivado.  
+        Gained practical experience in digital design workflows.</p>
+      </div>
 
-    .section--page {
-        margin-bottom: 2em;
-    }
+      <div class="timeline-item">
+        <h3><i class="fas fa-briefcase"></i> Internship – Embedded Developer Virtual</h3>
+        <p><i>10/2023 – 11/2023</i><br>
+        Worked on <b>embedded systems</b> using Keil uVision and Proteus.  
+        Built microcontroller-based projects through simulations.</p>
+      </div>
 
-    #wrapper--hero {
-        display: flex;
-        align-items: center;
-        gap: 4em;
-    }
+      <!-- Extra Curricular -->
+      <div class="timeline-item">
+        <h3><i class="fas fa-users"></i> Extra-Curricular</h3>
+        <p>IEEE Member & Social Media Manager - IEEE, GITAM (06/2023 - Present)</p>
+        <p>IEEE Member & Vice Secretary - IEEE, GITAM (10/2024 - Present)</p>
+        <p>Participated in Smart India Hackathon 2024</p>
+        <p>Participated in Smart India Hackathon 2025</p>
+      </div>
 
-    #user-name {
-        font-size: 1.5em; /* Adjusted font size */
-        line-height: 1.5em;
-    }
+      <!-- Certifications -->
+      <div class="timeline-item">
+        <h3><i class="fas fa-certificate"></i> Certifications</h3>
+        <p>BEL Internship (2025)</p>
+        <p>Smart India Hackathon (2025)</p>
+        <p>Summer Development Program - GITAM (2024)</p>
+        <p>VLSI - Internshala (2024)</p>
+        <p>Smart India Hackathon (2024)</p>
+        <p>Embedded Developer Virtual Internship (2023)</p>
+      </div>
+    </div>
+  </section>
 
-    #bio, #Contact {
-        font-weight: 500;
-    }
+  <!-- Contact -->
+  <section id="contact" class="contact fade-in">
+    <div class="container">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+      <p>Email: <a href="mailto:monishaaahs@gmail.com">monishaaahs@gmail.com</a></p>
+      <p>Phone: <a href="tel:+918050581342">+91 80505 81342</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/monisha-h-s-04aa35265" target="_blank">Profile</a></p>
+      <p>GitHub: <a href="https://github.com/monishahs24" target="_blank">monishahs24</a></p>
+    </div>
+  </section>
 
-    #profile-pic {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-    }
-
-    #socials--list {
-        display: flex;
-        justify-content: flex-start;
-        column-gap: 4em; /* Adjusted gap */
-        flex-wrap: wrap;
-    }
-
-    #socials--list a {
-        font-weight: 400;
-        transition: 0.3s;
-    }
-
-    #socials--list a:hover {
-        color: var(--mainLinkColor);
-        font-weight: 400;
-    }
-
-    .card--techstack {
-        border: 1px solid var(--mainBorderColor);
-        padding: 0.5em 1em;
-        border-radius: 5px;
-        margin-bottom: 0.5em;
-    }
-
-    .card--techstack span {
-        font-weight: bold;
-    }
-
-    .line-break {
-        background-color: var(--mainBorderColor);
-        height: 2px;
-    }
-
-    .resume-section p,
-    .resume-section li {
-        color: var(--mainLinkColor); /* Change color to blue */
-    }
-
-    .resume-section h2 {
-        color: #fff; /* Keep heading white */
-        font-size: 1.5em; /* Adjusted font size for headings */
-    }
-</style>
-
-<div id="container--main">
-    <section id="wrapper--hero" class="section--page">
-        <img id="profile-pic" src="./assets/images/profile_pic.jpg" alt="Profile Picture of Monisha H S"/>
-        <div>
-            <h1 id="user-name">Monisha H S</h1>
-            <p id="bio">Pursuing a Bachelor's degree in Electronics and Communication Engineering at <a href="https://www.gitam.edu/academics/gitam-campuses/bengaluru-campus" target="_blank">GITAM University, Bangalore</a>, with hands-on experience in communication technologies.</p>
-            <p>📍Doddaballapur,Bengaluru Rural-561203 Karnataka</p>
-            <p>✉ monishahs24@gmail.com</p>
-            <p id="Contact">📞 +91 8050581342</p>
-        </div>
-    </section>
-
-    <section class="section--page">
-        <div id="socials--list">
-            <a href="https://www.linkedin.com/in/monisha-h-s-04aa35265/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/monishahs24" target="_blank">GitHub</a>
-            <a href="resume_pdf.pdf" target="_blank">Download Resume</a>
-        </div>
-    </section>
-
-    <section class="section--page resume-section">
-        <h2>Educational Qualifications</h2>
-                <div class="card--techstack"><span>✔GITAM University, Bengaluru - UG</span></div>
-                    <li>November 2022 - April 2026</li>
-                    <li>Branch - ECE</li>
-                    <li>CGPA - 7.82</li>
-                <div class="card--techstack"><span>✔Shree Vani PU College - PUC/12th</span></div>
-                    <li>August 2020 - March 2022</li>
-                    <li>Combination - PCMB</li>
-                    <li>Percentage - 87%</li>
-                    <li>CGPA - 9.1</li>
-                <div class="card--techstack"><span>✔Swamy Vivekananda English High School - SSLC</span></div>
-                <ul>
-                    <li>April 2020</li>
-                    <li>Percentage - 93.4%</li>
-                    <li>CGPA - 9.8</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-
-    <section class="section--page">
-        <h2>Skills</h2>
-        <div id="wrapper--techstack__items">
-            <div class="card--techstack"><span>✔Decision Making</span></div>
-            <div class="card--techstack"><span>✔Time Management</span></div>
-            <div class="card--techstack"><span>✔Teamwork</span></div>
-            <div class="card--techstack"><span>✔Creativity</span></div>
-        </div>
-    </section>
-
-    <section class="section--page">
-        <h2>Extra-curricular activities</h2>
-        <div id="wrapper--techstack__items">
-            <div class="card--techstack"><span>✔IEEE Member, Bengaluru</span></div>
-        </div>
-    </section>
-
-    <section class="section--page">
-        <h2>Internships</h2>
-        <div id="wrapper--techstack__items">
-            <div class="card--techstack"><span>✔Embedded Developer Virtual Internship-Online</span></div>
-        </div>
-    </section>
-
-    <section class="section--page">
-        <h2>Certifications</h2>
-        <div id="wrapper--techstack__items">
-            <div class="card--techstack"><span><a href="assets/certificates/aicte.pdf" target="_blank">✔AICTE-Embedded Developer Virtual Internship-Online</a></span></div>
-        </div>
-    </section>
-
-    <section class="section--page">
-        <h2>Technical Skills</h2>
-        <div id="wrapper--techstack__items">
-            <div class="card--techstack"><span>✔C</span></div>
-            <div class="card--techstack"><span>✔Basics of C++</span></div>
-            <div class="card--techstack"><span>✔Basics of Python</span></div>
-        </div>
-    </section>
-
-    <section class="section--page">
-        <h2>Languages Known</h2>
-        <div id="wrapper--techstack__items">
-            <div class="card--techstack"><span>✔English</span></div>
-            <div class="card--techstack"><span>✔Kannada</span></div>
-            <div class="card--techstack"><span>✔Hindi</span></div>
-            <div class="card--techstack"><span>✔Telugu</span></div>
-        </div>
-    </section>
-
-</div>
-
+  <footer>
+    <p>© 2025 Monisha H S | Hosted on GitHub Pages</p>
+  </footer>
 </body>
 </html>
