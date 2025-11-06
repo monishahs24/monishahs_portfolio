@@ -1,0 +1,1 @@
+This repository hosts the source code for my professional portfolio and resume website. The site serves as a dynamic, interactive presentation of my qualifications, work history, skills, and personal projects.
